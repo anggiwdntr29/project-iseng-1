@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+}
+
+.opening {
+    background-color: #142850;
+    min-height: 643px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.opening h1 {
+    font-size: 72px;
+    color: #fff;
+    letter-spacing: 5px;
+    
+}
+
+.opening p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.masuk{
+    font-weight: 500;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #27496D;
+    color: #fff;
+}
+
+.masuk:hover {
+    background-color: #fff;
+    color: #27496D;
+    cursor: pointer;
+    transition: all ease .3s;
+}
+
+.text-profile {
+    
+}
