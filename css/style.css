@@ -7,7 +7,7 @@
 
 .opening {
     background-color: #142850;
-    min-height: 643px;
+    min-height: 650px;
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -46,8 +46,11 @@
 
 .profile-1 {
     display: flex;
-    flex-wrap: nowrap;
-    margin: 12px 40px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    min-height: 650px;
+    gap: 72px;
 }
 
 .img-profile img {
@@ -57,5 +60,32 @@
 }
 
 .text-profile {
-    
+    width: 600px;
+    height: 400px;    
+}
+
+.text-profile h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.text-profile p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 36px;
+    text-align: justify;
+    margin-bottom: 12px;
+}
+
+.profile-2 {
+    background-color: #142850;
+    color:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    min-height: 650px;
+    gap: 72px;
 }
