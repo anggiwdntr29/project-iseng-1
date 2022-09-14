@@ -105,3 +105,15 @@ main>h1 {
 .blog-author {
     margin: 5px 0;
 }
+
+.back {
+    display: block;
+    text-align: center;
+    margin: 20px 0;
+    text-decoration: none;
+    color: #2b65d8;
+}
+
+.back:hover {
+    color: #ec2b2b;
+}
