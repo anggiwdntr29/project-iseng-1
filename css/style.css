@@ -90,3 +90,8 @@
     min-height: 650px;
     gap: 72px;
 }
+
+footer {
+    background-color: black;
+    height: 320px;
+}
