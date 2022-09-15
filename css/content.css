@@ -1,0 +1,34 @@
+.head {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+.head img {
+    display: block;
+    margin: 0;
+    border-radius: 10px;
+    height: 400px;
+    width: 700px;
+}
+
+.body-title {
+    text-align: center;
+    margin: 5px 0 30px;
+}
+
+.body-date {
+    color: rgb(75, 75, 75);
+    margin: 0 50px;
+}
+
+.body-content,
+.body-author {
+    margin: 0 40px;
+    padding: 7px 10px;
+    text-align: justify;
+}
+
+.body-author {
+    font-weight: 600;
+}
