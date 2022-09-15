@@ -4,7 +4,7 @@ $("form").on("submit", function (e) {
     const dataString = $(this).serialize();
     $.ajax({
         type: "POST",
-        url: "http://localhost/project-iseng-1-api/addBlog.php",
+        url: "https://kelazer.000webhostapp.com/addBlog.php",
         data: dataString,
         success: function () {
             $('#alertInfo').html(`
