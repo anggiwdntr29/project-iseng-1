@@ -9,7 +9,9 @@
 
 /* beranda */
 .opening {
-    background-color: #142850;
+    background: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -28,6 +30,7 @@
 .opening p {
     font-family: 'Poppins', sans-serif;
     font-size: 28px;
+    color: #fff;
     margin-bottom: 20px;
 }
 
@@ -36,13 +39,13 @@
     font-size: 20px;
     padding: 10px;
     border-radius: 4px;
-    background-color: #27496D;
-    color: #fff;
+    background-color: #adb2b0;
+    color: #162135;
 }
 
 .masuk a:hover {
-    background-color: #fff;
-    color: #27496D;
+    background-color: #162135;
+    color: #7291bd;
     cursor: pointer;
     transition: all ease .3s;
 }
@@ -83,7 +86,7 @@
 }
 
 .profile-2 {
-    background-color: #142850;
+    background-color: #162135;
     color:#fff;
     display: flex;
     justify-content: center;
