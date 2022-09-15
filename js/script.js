@@ -1,3 +1,7 @@
+window.onload = () => {
+    getBlogs()
+}
+
 const showFormattedDate = (date) => {
     const options = {
         weekday: "long",
@@ -20,21 +24,17 @@ const getBlogs = () => {
                 $('#blogsContainer').append(`
                 <div class="blog-item">
                     <div class="blog-item-picture">
-                        <img src="https://picsum.photos/200/300" alt="">
+                        <img src="${data.gambar}" alt="">
                     </div>
                     <div class="blog-main">
-                        <a href="" class="blog-title">${data.judul}</a>
+                        <a href="content.html?id=${data.id}" class="blog-title">${data.judul}</a>
                         <p class="blog-date">${showFormattedDate(data.tanggal)}</p>
                         <p class="blog-sinopsis">${konten}</p>
                         <p class="blog-author">${data.penulis}</p>
                     </div>
                 </div>
-                `);
+                `)
             })
         }
     })
-}
-
-window.onload = () => {
-    getBlogs()
 }
