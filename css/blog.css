@@ -36,6 +36,10 @@ nav a h1 {
     font-size: 14px;
 }
 
+.search-input input::placeholder {
+    color: white;
+}
+
 .search-input button {
     background-color: #142850;
     color: #FFFFFF;
