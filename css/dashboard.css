@@ -30,7 +30,7 @@ form {
     display: none;
 }
 
-label {
+.uploadImg {
     display: flex;
     margin: auto;
     text-align: center;
@@ -44,23 +44,23 @@ label {
     font-family: 'Poppins', sans-serif;
 }
 
-label:hover {
+.uploadImg:hover {
     cursor: pointer;
     background-color: #6f91aa;
     transition: all ease .3s;
 }
 
 .form-text {
-    background-color: #aaadaf;
+    background-color: #e9ecef;
     height: 32px;
-    padding: 4px 12px;
+    padding: 20px 12px;
     font-size: 16px;
     outline: none;
     margin: 12px 0;
 }
 
 .form-area {
-    background-color: #aaadaf;
+    background-color: #e9ecef;
     resize: none;
     height: 120px;
     scrollbar-color: #2C3333;
@@ -76,7 +76,7 @@ label:hover {
 }
 
 .form-btn {
-    background-color: #0f8bdd;
+    background-color: #6486a0;
     width: 200px;
     margin: 12px 0;
     padding: 12px 32px;
@@ -86,5 +86,5 @@ label:hover {
 }
 
 .form-btn:hover {
-    background-color: #065e99;
+    background-color: #6f91aa;
 }

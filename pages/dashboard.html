@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,25 +8,69 @@
     <link rel="stylesheet" href="../css/dashboard.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Admin | KELAZER</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
+
 <body>
     <main>
         <div class="tambah">
             <h1>Tambah Artikel</h1>
-            <form action="" method="post">
-            <input type="file" class="inpt-img" id="img">
-            <label for="img">
-                <i class="fa-regular fa-image"></i>
-                Upload Gambar</label>
-            <input type="text" class="form-text" placeholder="Tambahkan Judul">
-            <textarea class="form-area" placeholder="Deskripsi"></textarea>
-            
+
+            <div id="alertInfo"></div>
+
+            <form method="POST">
+                <!-- Gambar -->
+                <input type="file" class="inpt-img" id="img">
+                <label class="uploadImg" for="img">
+                    <i class="fa-regular fa-image"></i>
+                    Upload Gambar</label>
+
+                <input style="display: none;" type="text" name="gambar" value="https://picsum.photos/200/300">
+
+                <!-- Tanggal (display: none) -->
+                <input style="display: none;" id="tanggal" type="date" name="tanggal">
+
+                <!-- Judul -->
+                <input name="judul" type="text" class="form-text" placeholder="Tambahkan Judul" required>
+
+                <!-- Konten -->
+                <textarea name="konten" class="form-area" placeholder="Deskripsi" required></textarea>
+
+                <!-- Kategori -->
+                <div class="input-group mb-3 mt-2">
+                    <label class="input-group-text" for="kategori">Kategori</label>
+                    <select name="kategori" class="form-select" id="kategori">
+                        <option value="Coding">Coding</option>
+                        <option value="Gaming">Gaming</option>
+                        <option value="Musik">Musik</option>
+                        <option value="Anime">Anime</option>
+                    </select>
+                </div>
+
+                <!-- Penulis -->
+                <div class="input-group mt-2">
+                    <label class="input-group-text" for="penulis">Penulis</label>
+                    <select name="penulis" class="form-select" id="penulis">
+                        <option value="Hokky">Hokky</option>
+                        <option value="Anggi">Anggi</option>
+                    </select>
+                </div>
+
+                <div class="btn">
+                    <input type="submit" class="form-btn" value="Tambah">
+                </div>
             </form>
-            <div class="btn">
-                <input type="submit" class="form-btn" value="Tambah">
-            </div>
         </div>
     </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="../js/addBlog.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
