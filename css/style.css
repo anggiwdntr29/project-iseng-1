@@ -6,11 +6,13 @@
     text-decoration: none;
     list-style: none;
 }
-
+html {
+    font-size: 100%;
+}
 /* beranda */
 .opening {
     background-color: #142850;
-    min-height: 650px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -19,7 +21,7 @@
 }
 
 .opening h1 {
-    font-size: 72px;
+    font-size: 5rem;
     color: #fff;
     letter-spacing: 5px;
     
@@ -27,13 +29,13 @@
 
 .opening p {
     font-family: 'Poppins', sans-serif;
-    font-size: 28px;
+    font-size: 1.8rem;
     margin-bottom: 20px;
 }
 
 .masuk a{
     font-weight: 500;
-    font-size: 20px;
+    font-size: 1.2rem;
     padding: 10px;
     border-radius: 4px;
     background-color: #27496D;
@@ -51,8 +53,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
-    min-height: 650px;
+    height: 100vh;
     gap: 72px;
 }
 
@@ -69,14 +70,14 @@
 
 .text-profile h1 {
     font-family: 'Poppins', sans-serif;
-    font-size: 36px;
+    font-size: 2.1rem;
     margin-bottom: 20px;
 }
 
 .text-profile p {
     font-family: 'Poppins', sans-serif;
     font-weight: 100;
-    font-size: 18px;
+    font-size: 1.1rem;
     line-height: 36px;
     text-align: justify;
     margin-bottom: 12px;
@@ -88,8 +89,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
-    min-height: 650px;
+    flex-direction: row-reverse;
+    height: 100vh;
     gap: 72px;
 }
 
@@ -103,7 +104,6 @@ footer {
 
 .footer {
     width: 300px;
-    height: 200px;
     margin: 32px;
 }
 .title {
@@ -136,13 +136,13 @@ footer {
 .social h2 {
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    font-size: 20px;
+    font-size: 1.2rem;
     font-weight: 500;
 }
 
 .social .icon {
     justify-content: center;
-    font-size: 24px;
+    font-size: 1.3rem;
     display: flex;
     gap: 20px;
     margin-bottom: 20px;
@@ -154,3 +154,73 @@ footer {
 .social i:hover {
     color: #142850;
 } 
+@media screen and (max-width: 972px) {
+    html {
+        font-size: 90%;
+    }
+    .profile-1, .profile-2 {
+        flex-direction: column;
+        padding: 40px 20px;
+        gap: 0;
+    }
+
+    .img-profile {
+    display: flex;
+    justify-content: center;
+    }
+
+    .img-profile img {
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .text-profile {
+        margin-top: 12px;
+        width: 100%;
+    }
+
+    .text-profile h1 {
+        text-align: center;
+    }
+    
+    .footer {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 85%;
+    }
+}
+
+@media screen and (max-width: 518px) {
+    html {
+        font-size: 65%;
+    }
+    .opening p {
+        font-size: 18px;
+    }
+        .img-profile img {
+        width: 200px;
+        height: 280px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    html {
+        font-size: 65%;
+    }
+    .opening p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 358px) {
+    html {
+        font-size: 50%;
+    }
+    .opening p {
+        font-size: 16px;
+    }
+}
