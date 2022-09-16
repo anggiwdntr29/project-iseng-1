@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+nav {
+    background-color: #142850;
+    display: flex;
+    justify-content: center;
+}
+
+nav a h1 {
+    color: #FFFFFF;
+    margin: 20px 40px;
+    font-weight: 700;
+}
+
+
+main {
+    margin: 50px 30px 30px;
+}
+
+main h1 {
+    margin-top: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 800;
+}
+
+.btn-tambah {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-tambah a {
+    padding: 12px;
+    font-size: 20px;
+    background-color: #142850;
+    color: #FFFFFF;
+}
+
+.btn-tambah a i {
+    margin-right: 12px;
+}
+
+.btn-tambah a:hover {
+    background-color: #183775;
+    transition: all ease .3s;
+}
+
+table {
+    width: 90%;
+    margin-top: 32px;
+    border-collapse: collapse;
+    border: 1px black;
+}
+
+tr th {
+    background-color: #183775;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+tr td {
+    padding: 12px 20px;
+    text-align: justify;
+}
+
+tr:nth-child(even){
+    background-color: #6a8fda;
+}
+
+.no {
+    width: 5%;
+}
+
+.judul {
+    width: 20%;
+}
+.aksi a {
+    margin: 0 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+@media screen and (max-width: 843px) {
+    .blog-item {
+        width: 100vw;
+    }
+}
