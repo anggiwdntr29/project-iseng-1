@@ -80,9 +80,11 @@ main h1 {
     font-weight: 700;
     text-decoration: none;
     transition: trasfrom 0.3 ease;
+    cursor: pointer;
 }
 
-.category::after, .category::before {
+.category::after,
+.category::before {
     content: "";
     position: absolute;
     opacity: 0.3;
@@ -101,6 +103,7 @@ main h1 {
 .category:hover::after {
     transform: translate(1px, 1px);
 }
+
 .category:hover::before {
     transform: translate(4px, 4px);
 }
@@ -133,7 +136,7 @@ main h1 {
 }
 
 .blog-title {
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: black;
     font-weight: 500;
     text-decoration: none;

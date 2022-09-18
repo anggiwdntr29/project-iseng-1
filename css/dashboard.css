@@ -58,18 +58,20 @@ table {
     border: 1px black;
 }
 
-tr th {
+th {
+    color: white;
     background-color: #183775;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
+    padding: 10px;
 }
 
 tr td {
-    padding: 12px 20px;
+    padding: 12px 30px;
     text-align: justify;
 }
 
-tr:nth-child(even){
+tr:nth-child(even) {
     background-color: #6a8fda;
 }
 
@@ -79,7 +81,9 @@ tr:nth-child(even){
 
 .judul {
     width: 20%;
+    text-align: center;
 }
+
 .aksi a {
     margin: 0 10px;
 }
@@ -90,6 +94,7 @@ tr:nth-child(even){
     align-items: center;
     margin: auto;
 }
+
 @media screen and (max-width: 843px) {
     .blog-item {
         width: 100vw;
